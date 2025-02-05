@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('title');
             $table->string('writer');
             $table->unsignedBigInteger('user_id'); // Foreign key
-            $table->unsignedBigInteger('category_id'); // Foreign key
+            $table->unsignedBigInteger(column: 'category_id'); // Foreign key
             $table->string('publisher');
             $table->integer('year');
             $table->timestamps(); // created_at and updated_at
